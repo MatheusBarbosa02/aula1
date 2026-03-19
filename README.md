@@ -16,4 +16,3 @@ sequenceDiagram
     Note over B: Calcula distâncias em KM
     B-->>A: Retorna lista de endereços + distâncias
     A-->>U: Exibe lista de endereços com KM
-```
