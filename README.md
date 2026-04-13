@@ -1,10 +1,19 @@
 # aula1
 
-### Diagrama de Escolha de Endereço
+### Diagrama caso de uso
 teste
 
 ```mermaid
-graph TD
-    Usuario -->|Fazer login| Sistema
-    Usuario -->|Cadastrar| Sistema
-    Sistema -->|Validar dados| Banco
+graph LR
+    subgraph "Online Store"
+        UC1((View Items))
+        UC2((Place Order))
+        UC3((Process Payment))
+    end
+
+    Customer((Customer)) --- UC1
+    Customer --- UC2
+    Admin((Admin)) --- UC3
+
+    UC2 -.->|include| UC1
+
