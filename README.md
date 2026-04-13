@@ -14,6 +14,3 @@ graph LR
     Customer((Customer)) --- UC1
     Customer --- UC2
     Admin((Admin)) --- UC3
-
-    UC2 -.->|include| UC1
-
